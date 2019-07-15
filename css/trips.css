@@ -1,0 +1,29 @@
+#secondarynav .btn {
+    margin-right: 2%;
+}
+
+#secondarynav a, #secdonarynav p {
+    font-style: none;
+    color: rgb(124, 114, 114);
+}
+
+#secondarynav .tripTble {
+    margin-top: 2%;
+    width:100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    vertical-align: bottom;
+}
+
+#secondarynav .tripTble th {
+    height: 50px;
+    font-size: large;
+}
+
+#secondarynav td {
+    height: 40px;
+}
+
+#secondarynav label {
+    padding-top: 2%;
+}

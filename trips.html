@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>TT - Trips</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <link href="css/agency.css" rel="stylesheet">
+  <link href="css/trips.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" width=150 /></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="trips.html" >Trips</a>
+          </li>
+          <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="loc.html">Places</a>
+          </li>
+          <li class="nav-item submenu dropdown">
+                  <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="acct" href="#idk3">Account</a>
+              <div class="dropdown-menu" aria-labeledby="acct">
+                  <a class="dropdown-item" href="profile.html">Profile</a>
+                  <a class="dropdown-item" href="settings.html">Settings</a>
+              </div>
+              </li>
+          <li class="nav-item">
+              <p class="nav-link">
+                Amanda Smith <!--{{User}}-->
+              </p>
+          </li>
+          <li class="nav-item"> <!--{{Profile Pic}}-->
+                  <img class="img-profile rounded-circle"  src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<section id="secondarynav">
+  <div class="container">
+      <h2 style="padding-bottom: 2%;">Trips</h2>
+      <div class="row" style="padding-bottom: 0;">
+          <div class="col-sm-1">
+              <a href="profile.html">Profile</a>
+          </div>
+          <div class="col-sm-1">
+              <p>Trips</p>
+          </div>
+          <div class="col-sm-1">
+            <a href="loc.html">Places</a>
+          </div>
+          <div class="col-sm-1">
+              <a href="settings.html">Settings</a> <!--do we need this option-->
+              
+          </div>
+          <hr>
+      </div>
+      <hr>
+      <div class="row">
+          
+      <div class="col" id="buttonGroup" style="padding-top:33px;" >
+        <button  id="colbutton" type="button" 
+          class="btn btn-light" data-toggle="collapse" data-target="#Pending" data-parent="#buttonGroup">
+            Pending</button>                    
+        <button  id="colbutton" type="button" 
+          class="btn btn-light" data-toggle="collapse" data-target="#Approved" data-parent="#buttonGroup">
+            Approved</button>
+        <button  id="colbutton" type="button" 
+          class="btn btn-light" data-toggle="collapse" data-target="#Denied" data-parent="#buttonGroup">
+            Denied</button>                    
+        <button  id="colbutton" type="button" 
+          class="btn btn-light" data-toggle="collapse" data-target="#Past" data-parent="#buttonGroup">
+            Past</button>
+        <button id="colbutton" type="button" 
+          class="btn btn-light" data-toggle="collapse" data-target="#Demo" data-parent="#buttonGroup">
+          Info</button>
+    </div>
+  </div>
+        <div class="row">
+          <div class="collapse" id="Pending"  data-parent="#buttonGroup">
+              <table class="tripTble">
+                <tr>
+                  <th>Location</th>
+                  <th>Dates</th>
+                  <th>Manager</th>
+                </tr>
+                <tr>
+                  <td>Grand Junction, CO</td>
+                  <td>August 17 - August 19</td>
+                  <td>Brooke S.</td>
+                </tr>
+                <tr>
+                  <td>Palo Alto, CA</td>
+                  <td>September 7</td>
+                  <td>Brooke S.</td>
+                </tr>
+                <tr>
+                  <td>Tokyo, Japan</td>
+                  <td>October 7 - October 12</td>
+                  <td>Brooke S.</td>
+                </tr>
+              </table>
+              <h5 style="margin-top: 2%;">Total pending trips: 3</h5>
+          </div>
+        <div class="collapse" id="Approved"  data-parent="buttonGroup">
+            <table class="tripTble">
+                <tr>
+                  <th>Location</th>
+                  <th>Dates</th>
+                  <th>Approved On</th>
+                </tr>
+                <tr>
+                  <td>Denver, CO</td>
+                  <td>August 23 - August 25</td>
+                  <td>July 3</td>
+                </tr>
+                <tr>
+                  <td>Las Vegas, NM</td>
+                  <td>November 2 - November 3</td>
+                  <td>July 3</td>
+                </tr>
+                <tr>
+                  <td>Tokyo, Japan</td>
+                  <td>December 5</td>
+                  <td>July 29</td>
+                </tr>
+            </table>
+            <h5 style="margin-top: 2%;">Total approved trips: 3</h5>
+          </div>
+        <div class="collapse" id="Denied">
+          <table class="tripTble">
+            <tr>
+              <th>Location</th>
+              <th>Dates</th>
+              <th>Reason</th>
+            </tr>
+            <tr>
+              <td>Seattle, WA</td>
+              <td>August 17 - August 19</td>
+              <td>Trip cancelled</td>
+            </tr>
+          </table>
+          <h5 style="margin-top: 2%;">Total denied trips: 2</h5>
+        </div>
+        <div class="collapse" id="Demo">
+            <h4 style="margin-top:21%;">Total trips... </h4>
+            <p>pending: 3</p>
+            <p>approved: 3</p>
+            <p>denied: 2</p>
+            <p>past: 0</p>
+            <h5 style="padding-top:2%">Total trips: 5</h5>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <script src="js/agency.js"></script>
+</body>
+</html>
