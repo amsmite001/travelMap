@@ -72,3 +72,5 @@ function addDestinationToSelect(){
   document.getElementById('addDestination').value = ' ';
   }
 }
+
+

@@ -1,144 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>TT - Home</title>
+    <title>TT - Home</title>
 
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-  <link href="css/agency.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/logo.png" width=150 />
-      </a>
-
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
-              data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" 
-                aria-label="Toggle navigation">Menu
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="trips.html">Trips</a>
-          </li>
-          <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="loc.html">Places</a>
-          </li>
-          <li class="nav-item submenu dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" 
-                    aria-expanded="false" id="acct" href="#idk3">Account</a>
-            <div class="dropdown-menu" aria-labeledby="acct">
-                <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="#">Settings</a>
-            </div>
-          </li>
-          <li class="nav-item">
-              <p class="nav-link">
-              Amanda Smith <!--{{User}}-->
-              </p>
-          </li>
-          <li class="nav-item"> <!--{{Profile Pic}}-->
-                  <img class="img-profile rounded-circle"  src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
-    <!-- Header -->
-  <section id="new" style="padding-bottom: 1%;">
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <h2>Welcome Amanda</h2> <!--{{user.name}}-->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img src="img/logo.png" width=150 />
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" 
+                  aria-label="Toggle navigation">Menu
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="pages/trips.html">Trips</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="pages/loc.html">Places</a>
+            </li>
+            <li class="nav-item submenu dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" 
+                      aria-expanded="false" id="acct" href="#idk3">Account</a>
+              <div class="dropdown-menu" aria-labeledby="acct">
+                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <p class="nav-link">
+                Amanda Smith <!--{{User}}-->
+                </p>
+            </li>
+            <li class="nav-item"> <!--{{Profile Pic}}-->
+                    <img class="img-profile rounded-circle"  src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </nav>
+    
+      <!-- Header -->
+  
+    <div id="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" style="border-color: black;  border-width: thin;border-style:solid;">
+            <h3>Denver Today</h3> <!--{{user.location}}-->
+            <div class="form-group has-search" style="margin-bottom: 5%;">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search for Employees" style="width:100%;">
+            </div>
 
-
-  <div id="main">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6" style="border-color: black;  border-width: thin;border-style:solid;">
-          <h3>Add Trip</h3>
-          <form>
-            <div class="form-group">
-              <div class="row">
-                <div class="col">
-                  <label for="startDate_InputField">Dates:</label>
-                  <input type="date" class="form-control" id="startDate_InputField">
-                  </div>
-
-                  <div class="col">
-                    <label for="endDate_InputField">to</label>
-                    <input type="date" class="form-control" id="endDate_InputField"> <br>
-                  </div>
-                </div>
+            <div class="people-loc-table">
+              <div class="container">
+                <p><a class="nofloat" href="#">Brooke S.</a> will be in until July 9 </p>
+                <p><a class="nofloat" href="#">Steve P.</a> will be in until August 12</p>
+                <p><a class="nofloat" href="#">Laura P.</a> will be in on July 9 until July 11</p>
               </div>
-
-              <div class="form-group">
-                <div class="row">
-                  <div class="col">
-                    <label for="destination">Destination:</label>
-                        <select id="destination" class="form-control" name="destination">
-                        <option value="DEN">Denver, CO</option>
-                        <option value="DES">Desmoin, IW</option>
-                        <option value="LON">London, England</option> 
-                      </select> 
-
-                    <div class="collapse" id="addDestin">
-                          <label for="addDestination" style="padding-top:2%;">Add Destination</label>
-                          <input type="text" class="form-control" id="addDestination"> <small class="form-text text-muted">Destinations need to be in the form City, State or City, Country</small> <br>
-                          <button type="button" class="btn btn-light" onclick="addDestinationToSelect()">Add</button>
-                    </div>
-                    <div class="collapsebutton"  style="padding-top:25px;" >
-                      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#addDestin">    <i class="fa fa-plus" style="float: right;" aria-hidden="true"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <button type="button" class="btn btn-light" style="float:right;">Request</button>
-            <p style="margin-bottom: 4%;">&nbsp;</p>
-
+            </div>
+            <!--Can we send a search to Hi and get results back? or redirect to Hi with those search params-->
+            <a class="dofloat" href="pages/people.html"><i class="fa fa-plus" aria-hidden="true"></i> </a></p>
+            <p>&nbsp;</p>
             <hr>
-
-          <!--Table should be filled by db query responses-->
+            <!--Table should be filled by db query responses-->
             <h3>Status</h3>
             <table class="modified">
-                <tr>
-                  <td>Denver, CO</td>
-                  <td>July 5 - July 17</td>
-                  <!--Button go to personal info-->
-                  <td><a href="trips.html"><button type="button" class="btn btn-success">Approved</button></a></td>
-                </tr>
-                <tr>
-                  <td>New York, NY</td>
-                  <td>August 4</td>
-                  <td><a href="trips.html"><button type="button" class="btn btn-info">Pending</button></a></td>
-                </tr>
-                <tr>
-                  <td>Tokyo, Japan</td>
-                  <td>September 17 - September 20</td>
-                  <td><a href="trips.html"><button type="button" class="btn btn-danger">Denied</button></a></td>
-                </tr>
+              <tr>
+                <td>Denver, CO</td>
+                <td>July 5 - July 17</td>
+                <!--Button go to personal info-->
+                <td><a href="pages/trips.html"><button type="button" class="btn btn-success">Approved</button></a></td>
+                <!--<td style="width:20px;">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button> 
+                </td> -->
+              </tr>
+              <tr>
+                <td>New York, NY</td>
+                <td>August 4</td>
+                <td><a href="pages/trips.html"><button type="button" class="btn btn-info">Pending</button></a></td>
+                <!--<td style="width:20px;">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button> -->
+                </td>
+              </tr>
+              <tr>
+                <td>Tokyo, Japan</td>
+                <td>September 17 - September 20</td>
+                <td>
+                  <a href="pages/trips.html"><button type="button" class="btn btn-danger">Denied</button></a>
+                    
+                </td>
+                <!--<td style="width:20px;">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button> -->
+                </td>
+              </tr>
             </table>
-            <a class="dofloat" href="trips.html"><i class="fa fa-plus" aria-hidden="true"></i> </a>
+            <a class="dofloat" href="pages/trips.html"><i class="fa fa-plus" aria-hidden="true"></i> </a>
             <p>&nbsp;</p>
-
             <hr>
 
             <!--Table should be filled by db query responses-->
@@ -147,59 +131,86 @@
                 <tr>
                   <td>Denver, CO</td>
                   <td>June 5 - July 17</td>
-                  <td><a href="trips.html"><button type="button" class="btn btn-light">Completed</button></a></td>
+                  <td><a href="pages/trips.html"><button type="button" class="btn btn-light">Completed</button></a></td>
                 </tr>
                 <tr>
                   <td>New York, NY</td>
                   <td>March 4</td>
-                  <td><a href="trips.html"><button type="button" class="btn btn-light">Completed</button></a></td>
+                  <td><a href="pages/trips.html"><button type="button" class="btn btn-light">Completed</button></a></td>
                 </tr>
                 <tr>
                   <td>Tokyo, Japan</td>
                   <td>January 17 - January 20</td>
-                  <td><a href="trips.html"><button type="button" class="btn btn-light">Completed</button></a></td>
+                  <td><a href="pages/trips.html"><button type="button" class="btn btn-light">Completed</button></a></td>
                 </tr>
               </table>
-            <a class="dofloat" href="trips.html"><i class="fa fa-plus" aria-hidden="true"></i> </a>
+            <a class="dofloat" href="pates/trips.html"><i class="fa fa-plus" aria-hidden="true"></i> </a>
             <p>&nbsp;</p>
           </div>
 
-          <div class="col-lg-6">
-            <div class="col-md-12">
-              <h3 class="text-center">Denver Today</h3> <!--{{user.location}}-->
-              <div class="form-group has-search" style="margin-bottom: 5%;">
-                  <span class="fa fa-search form-control-feedback"></span>
-                  <input type="text" class="form-control" placeholder="Search for Employees" style="width:100%;">
-              </div>
+            <div class="col-lg-6">
+              <div class="col-md-12">
+                <h3>Add Trip</h3>
+                <form action="php/indexinsert.php" method="POST">
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col">
+                        <label for="startDate_InputField">Dates:</label>
+                        <input type="date" class="form-control" id="startDate_InputField">
+                        </div>
 
-              <div class="people-loc-table">
-                <div class="container">
-                  <p><a class="nofloat" href="#">Brooke S.</a> will be in until July 9 </p>
-                  <p><a class="nofloat" href="#">Steve P.</a> will be in until August 12</p>
-                  <p><a class="nofloat" href="#">Laura P.</a> will be in on July 9 until July 11</p>
-                </div>
-              </div>
-              <!--Can we send a search to Hi and get results back? or redirect to Hi with those search params-->
-            <a class="dofloat" href="people.html"><i class="fa fa-plus" aria-hidden="true"></i> </a></p>
-            <hr style="margin-top: 8%; margin-bottom:8%;">
-
-            <div class="top-travel-table">
-              <div class="container"">
-                <div class="row">
-                  <div class="col text-center" >
-                    <h3>2019 Top Places</h3> <!--Date modify year-->
-                    <p>Denver - 120 trips</p>
-                    <p>New York - 45 trips</p>
-                    <p>Las Vegas - 1 trip </p>
-                    <a class="dofloat" href="loc.html"><i class="fa fa-plus" aria-hidden="true"></i> </a></p>
+                      <div class="col">
+                        <label for="endDate_InputField">to</label>
+                        <input type="date" class="form-control" id="endDate_InputField"> <br>
+                      </div>
+                    </div>
                   </div>
+      
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col">
+                        <label for="destination">Destination:</label>
+                            <select id="destination" class="form-control" name="destination">
+                            <option value="DEN">Denver, CO</option>
+                            <option value="DES">Desmoin, IW</option>
+                            <option value="LON">London, England</option> 
+                          </select> 
+    
+                        <div class="collapse" id="addDestin">
+                              <label for="addDestination" style="padding-top:2%;">Add Destination</label>
+                              <input type="text" class="form-control" id="addDestination"> <small class="form-text text-muted">Destinations need to be in the form City, State or City, Country</small> <br>
+                              <button type="button" class="btn btn-light" onclick="addDestinationToSelect()">Add</button>
+                        </div>
+                        <div class="collapsebutton"  style="padding-top:25px;" >
+                          <button type="button" style="float:right;" class="btn btn-primary" data-toggle="collapse" data-target="#addDestin">    <i class="fa fa-plus" style="float: right;" aria-hidden="true"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <button type="submit" class="btn btn-light" style="float:right;">Request</button>
+                <p style="margin-bottom: 4%;">&nbsp;</p>
 
-                  <div class="col text-center">
-                    <h3>2019 Top Travelers</h3>
-                    <p>Art - 15 trips</p>
-                    <p>Paul F. - 10 trips</p>
-                    <p>Brooke S. - 2 trips </p>
-                    <a class="dofloat" href="#"><i class="fa fa-plus" aria-hidden="true"></i> </a>
+                <hr style="margin-top: 8%; margin-bottom:8%;">
+
+                <div class="top-travel-table">
+                  <div class="container"">
+                      <h3>DHI Travel Insights</h3>
+                      
+                    <div class="row">
+                      <div class="col" >
+                        <h5  class="text-secondary">2019 Top Places</h5> <!--Date modify year-->
+                        <p><a class="nofloat">Denver</a></p>
+                        <p><a class="nofloat">New York</a></p>
+                        <p><a class="nofloat">Las Vegas</a></p>
+                      </div>
+
+                    <div class="col">
+                      <h5 class="text-secondary">2019 Top Travelers</h5>
+                      <p><a class="nofloat" href="#">Art Z.</a></p> <!--User query w/top # of approved trips/past-->
+                      <p><a class="nofloat" href="#">Paul F.</a></p>
+                      <p><a class="nofloat" href="#">Brooke S.</a></p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -208,51 +219,21 @@
         </div>
       </div>
     </div>
-  </div>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="js/agency.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/agency.js"></script>
 
-</body>
-
+  </body>
 </html>

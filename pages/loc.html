@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>TT - Trips</title>
+
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../css/trips.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="../index.html"><img src="../img/logo.png" width=150 /></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="trips.html" >Trips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="loc.html">Places</a>
+            </li>
+            <li class="nav-item submenu dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="acct" href="#idk3">Account</a>
+              <div class="dropdown-menu" aria-labeledby="acct">
+                <a class="dropdown-item" href="profile.html">Profile</a>
+                <a class="dropdown-item" href="settings.html">Settings</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link">
+                Amanda Smith <!--{{User}}-->
+              </p>
+            </li>
+            <li class="nav-item"> <!--{{Profile Pic}}-->
+              <img class="img-profile rounded-circle"  src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="secondarynav">
+      <div class="container">
+        <h2 style="padding-bottom: 2%;">Places</h2>
+        <div class="card">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                  <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="trips.html">Trips</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="people.html">Peope</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active disabled" href="loc.html">Places</a>
+              </li>     
+              <li class="nav item">
+                  <a class="nav-link" href="settings.html">Settings</a>
+              </li>
+            </ul>
+          </div>
+          
+          <!--Need to pull in from db-->
+          <div class="card-body">
+            <label for="destination">Location:</label>
+            <select id="destination" class="form-control" name="destination">
+              <option value="DEN">Denver, CO</option>
+              <option value="DES">Desmoin, IW</option>
+              <option value="LON">London, England</option> 
+            </select>
+            <div class="row" style="margin-top:2%;">
+              <div class="col-lg-6">
+                <h5>Location Info</h5>
+                <p>Office Location: DTC address</p>
+                <p style="float:left;"><script type="text/javascript" src="https://darksky.net/widget/default-small/42.360082,-71.05888/us12/en.js?width=undefined&height=70&title=Full Forecast&textColor=333333&bgColor=FFFFFF&skyColor=333&fontFamily=Default&customFont=&units=us"></script> </p>     
+              </div>
+              <div class="col-lg-6">
+                <h5>People Info</h5>
+                <p><a href="people.html" onclick="searchPeople('Paul')">Paul F.</a> will be in the office from 7/20 to 8/1.</p>
+                <p><a href="people.html"></a>Brooke S. will be in the office from 8/1 to 8/3.</p>
+                <p><a href="people.html"></a>Art Z. will be in the office from 8/3 to 8/4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="../js/jqBootstrapValidation.js"></script>
+    
+    <script src="../js/agency.js"></script>
+
+  </body>
+</html>
