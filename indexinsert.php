@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $dbusername = "root";
-$dbpassword = "kcp3pp3r";
+$dbpassword = "";
 $dbname = "trip";
 $conn = mysqli_connect($host,$dbusername,$dbpassword);
 if (!$conn) {
