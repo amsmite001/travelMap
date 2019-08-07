@@ -148,48 +148,70 @@
             <p>&nbsp;</p>
           </div>
 
-            <div class="col-lg-6">
-              <div class="col-md-12">
-                <h3>Add Trip</h3>
-                <form action="indexinsert.php" method="POST">
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col">
-                        <label for="startDate_InputField">Dates:</label>
-                        <input type="date" name = "startDate_InputFields" class="form-control" id="startDate_InputField">
-                        </div>
+          <div class="col-lg-6">
+            <div class="col-md-12">
+              <h3>Add Trip</h3>
+              <form id="tripForm" name="tripForm">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col">
+                      <label for="startDate_InputField">Dates:</label>
+                      <input type="date" name = "startDate_InputField" class="form-control" id="startDate_InputField">
+                      </div>
 
-                      <div class="col">
-                        <label for="endDate_InputField">to</label>
-                        <input type="date" name="endDate_InputFields" class="form-control" id="endDate_InputField"> <br>
-                      </div>
+                    <div class="col">
+                      <label for="endDate_InputField">to</label>
+                      <input type="date" name="endDate_InputField" class="form-control" id="endDate_InputField"> <br>
                     </div>
                   </div>
-      
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col">
-                        <label for="destination">Destination:</label>
-                            <select name="destinations" id="destination" class="form-control" name="destination">
-                            <option value="DEN">Denver, CO</option>
-                            <option value="DES">Desmoin, IW</option>
-                            <option value="LON">London, England</option> 
-                          </select> 
+                </div>
     
-                        <div class="collapse" id="addDestin">
-                              <label for="addDestination" style="padding-top:2%;">Add Destination</label>
-                              <input type="text" class="form-control" id="addDestination"> <small class="form-text text-muted">Destinations need to be in the form City, State or City, Country</small> <br>
-                              <button type="button" class="btn btn-light" onclick="addDestinationToSelect()">Add</button>
-                        </div>
-                        <div class="collapsebutton"  style="padding-top:25px;" >
-                          <button type="button" style="float:right;" class="btn btn-primary" data-toggle="collapse" data-target="#addDestin">    <i class="fa fa-plus" style="float: right;" aria-hidden="true"></i></button>
-                        </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col">
+                      <label for="destination">Destination:</label>
+                          <select name="destinations" id="destination" class="form-control" name="destination">
+                          <option value="DEN">Denver, CO</option>
+                          <option value="DES">Desmoin, IW</option>
+                          <option value="LON">London, England</option> 
+                        </select> 
+
+                      <div class="collapse" id="addDestin">
+                            <label for="addDestination" style="padding-top:2%;">Add Destination</label>
+                            <input type="text" class="form-control" id="addDestination"> <small class="form-text text-muted">Destinations need to be in the form City, State or City, Country</small> <br>
+                            <button type="button" class="btn btn-light" onclick="addDestinationToSelect()">Add</button>
+                      </div>
+                      <div class="collapsebutton"  style="padding-top:25px;" >
+                        <button type="button" style="float:right;" class="btn btn-primary" data-toggle="collapse" data-target="#addDestin">    <i class="fa fa-plus" style="float: right;" aria-hidden="true"></i></button>
                       </div>
                     </div>
                   </div>
-                <input type="submit" value = "Submit" class="btn btn-light" style="float:right;"></input>
+                </div>
+                <button type="button" class="btn btn-light" style="float:right;"  data-target="#notifModal" onclick="verifyForm(tripForm.startDate_InputField)">Submit</button>
+                
+                <!--Also warn user if trip could not be booked for some reason using same flag, but red as the header color-->
+                <div class="modal" id="notifModal" tabindex="-1" role="dialog" aria-labelledby="notifModal" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Trip Status</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          We've sent a notification about your trip to your supivisor!
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
                 <p style="margin-bottom: 4%;">&nbsp;</p>
               </form>
+
+              
 
                 <hr style="margin-top: 8%; margin-bottom:8%;">
 
@@ -229,6 +251,7 @@
         </div>
       </div>
     </footer>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

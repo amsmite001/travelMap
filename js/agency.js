@@ -74,3 +74,22 @@ function addDestinationToSelect(){
 }
 
 
+//Clear the form upon submission
+function clearForm(){
+  document.getElementById("tripForm").reset();
+}
+
+//Verify that the date field has been correctly inputed, if so, send to the DB and clear the form.
+function verifyForm(sD){
+  startDate = document.getElementById("tripForm").elements["startDate_InputField"].value;
+  endDate = document.getElementById("tripForm").elements["endDate_InputField"].value;
+  console.log(startDate);
+  if(startDate.length <=0 || endDate.length<= 0) {
+        alert('You need to enter a date!');
+  }
+  else {
+    clearForm();
+    $('#notifModal').modal('show');
+  }
+
+}
