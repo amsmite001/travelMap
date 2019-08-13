@@ -8,8 +8,8 @@ All are welcome to work on this repository, but credit must be given where due.
 ## Installiation
 
 To run this application, either
-1. Download the repository via the interface
-2. `git clone [repo]`
+1. Download the repository via the interface or  `git clone [repo]`
+2. Double click on `index.html`
 
 ## To-Do
 

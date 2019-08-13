@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>TT - Trips</title>
+    <link rel="shortcut icon" href="../img/icon2.png">
 
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -14,9 +15,9 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/headerFooter.css" rel="stylesheet">
     <link href="../css/trips.css" rel="stylesheet">
-
   </head>
 
   <body id="page-top">
@@ -84,26 +85,23 @@
               <div class="row" style="margin-bottom:2%;">
                 <div class="col" id="buttonGroup" >
                   <button  id="colbutton" type="button" 
-                    class="btn btn-light" data-toggle="collapse" data-target="#Pending" data-parent="#buttonGroup">
-                      Pending</button>                    
+                    class="btn btn-light" data-toggle="collapse" data-target="#notified" data-parent="#buttonGroup">
+                      Notified</button>                    
                   <button  id="colbutton" type="button" 
-                    class="btn btn-light" data-toggle="collapse" data-target="#Approved" data-parent="#buttonGroup">
-                      Approved</button>
+                    class="btn btn-light" data-toggle="collapse" data-target="#accepted" data-parent="#buttonGroup">
+                      Accepted</button>           
                   <button  id="colbutton" type="button" 
-                    class="btn btn-light" data-toggle="collapse" data-target="#Denied" data-parent="#buttonGroup">
-                      Denied</button>                    
-                  <button  id="colbutton" type="button" 
-                    class="btn btn-light" data-toggle="collapse" data-target="#Past" data-parent="#buttonGroup">
+                    class="btn btn-light" data-toggle="collapse" data-target="#past" data-parent="#buttonGroup">
                       Past</button>
                   <button id="colbutton" type="button" 
-                    class="btn btn-light" data-toggle="collapse" data-target="#Demo" data-parent="#buttonGroup">
+                    class="btn btn-light" data-toggle="collapse" data-target="#info" data-parent="#buttonGroup">
                     Info</button>
                 </div>
               </div>
       
               <div class="row">
-                <div class="collapse" id="Pending"  data-parent="#buttonGroup">
-                  <h5 class="text-secondary">Pending</h5>
+                <div class="collapse" id="notified"  data-parent="#buttonGroup">
+                  <h5 class="text-secondary">Notified</h5>
                   <table class="tripTble">
                     <tr>
                       <th>Location</th>
@@ -154,13 +152,13 @@
                   <hr>
                   <p class="text-muted" style="margin-top: 2%; margin-bottom: 2%;">Total pending trips: 3</p>
                 </div>
-                <div class="collapse" id="Approved"  data-parent="buttonGroup">
-                  <h5 class="text-success">Approved</h5>
+                <div class="collapse" id="accepted"  data-parent="buttonGroup">
+                  <h5 class="text-success">Accepted</h5>
                   <table class="tripTble">
                     <tr>
                       <th>Location</th>
                       <th>Dates</th>
-                      <th>Approved On</th>
+                      <th>Accepted On</th>
                       <th>Action</th>
                     </tr>
                     <tr>
@@ -206,30 +204,8 @@
                   <hr>
                   <p class="text-muted" style="margin-top: 2%; margin-bottom: 2%;">Total approved trips: 3</p>
                 </div>
-                <div class="collapse" id="Denied">
-                    <h5 class="text-danger">Denied</h5>
-                  <table class="tripTble">
-                    <tr>
-                      <th>Location</th>
-                      <th>Dates</th>
-                      <th>Reason</th>
-                      <th>Action</th>
-                    </tr>
-                    <tr>
-                      <td>Seattle, WA</td>
-                      <td>August 17 - August 19</td>
-                      <td>Trip cancelled</td>
-                      <td>
-                        <button type="button" class="btn btn-dark">
-                            <i class="fa fa-comments" aria-hidden="true"></i>
-                        </button> 
-                      </td>
-                    </tr>
-                  </table>
-                  <hr>
-                  <p class="text-muted" style="margin-top: 2%; margin-bottom: 2%;">Total denied trips: 2</p>
-                </div>
-                <div class="collapse" id="Past">
+
+                <div class="collapse" id="past">
                   <h5 class="text-secondary">Past</h5>
                   <table class="tripTble">
                     <tr>
@@ -247,7 +223,7 @@
                   <p class="text-muted" style="margin-top: 2%; margin-bottom: 2%;">Total past trips: 1</p>
 
                 </div>
-                <div class="collapse" id="Demo">
+                <div class="collapse" id="info">
                   <h4 style="margin-top:21%;">Total trips... </h4>
                   <p>Pending: 3</p>
                   <p>Approved: 3</p>
@@ -264,13 +240,12 @@
     </section>
 
 
+    <!--Scripts-->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <script src="../js/jqBootstrapValidation.js"></script>
-
-    <script src="../js/agency.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
