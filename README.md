@@ -1,6 +1,6 @@
 # Introduction
 
-This project is prototype for a project with the goal of tracking the locations of employees in a company. This is meant to be a lightweight app with the goal of adding minimal overhead and hassle. In doing so, employees will not feel over-burdened to use the app.
+This is a prototype for a project with the goal of tracking the locations of employees in a company. This is meant to be a lightweight app with the goal of adding minimal overhead and hassle. In doing so, employees will not feel over-burdened to use the app.
 
 All are welcome to work on this repository, but credit must be given where due.
 
