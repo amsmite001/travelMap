@@ -93,3 +93,11 @@ function verifyForm(sD){
   }
 
 }
+
+$(document).ready(function(){
+  $("#mangTripNotif").modal('show');
+});
+
+function sendAlert(message){
+  alert(message);
+}
