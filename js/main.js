@@ -101,3 +101,12 @@ $(document).ready(function(){
 function sendAlert(message){
   alert(message);
 }
+
+function confirmDeleteMod(){
+  $("#confirmDelete").modal('show');
+}
+
+function openChat(){
+  $("#chatModual").modal('show');
+
+}
